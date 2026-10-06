@@ -1,0 +1,16 @@
+{
+  "name": "proofdesk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "口述听写稿校对台 - 音频分段、时间码对齐、多人校对、版本合并与冲突人工确认",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed.js",
+    "test": "node --test test/"
+  }
+}
