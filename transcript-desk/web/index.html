@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>口述听写稿校对台</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" id="brand">
+    <span class="brand-mark">听</span>
+    <span class="brand-text">口述听写稿校对台</span>
+  </div>
+  <div class="top-right">
+    <span id="presence-bar" class="presence-bar"></span>
+    <div id="identity" class="identity"></div>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<div id="toast-host"></div>
+
+<!-- 身份登记弹层 -->
+<div id="identity-modal" class="modal-mask hidden">
+  <div class="modal">
+    <h2 id="identity-title">选择校对员身份</h2>
+    <p class="modal-sub" id="identity-sub">多人校对时，每位校对员的修改各自保留为独立版本。</p>
+    <div id="existing-users" class="user-chips"></div>
+    <div class="divider"><span>或登记新校对员</span></div>
+    <input id="new-name" class="input" maxlength="40" placeholder="输入姓名，如：林校对">
+    <div class="modal-actions">
+      <button class="btn" id="login-existing-btn" disabled>以选中身份进入</button>
+      <button class="btn primary" id="register-btn">登记并进入</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
